@@ -1,0 +1,126 @@
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1d3461;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1d3461;
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-left: 5px solid #f5a623;
+    padding-left: 10px;
+}
+
+section h3 {
+    color: #1d3461;
+    margin-bottom: 5px;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+li {
+    background-color: #eef3fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    color: #1d3461;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3461;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
