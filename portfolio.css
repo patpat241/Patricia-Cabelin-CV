@@ -195,4 +195,6 @@ body{font-size:17px;line-height:1.78}
 .education-feature .education-card{display:block}
 .education-card h2.education-heading{display:flex;align-items:center;gap:12px;margin:0 0 9px}
 .education-heading svg{display:block;width:27px;height:27px;flex:0 0 27px;fill:none;stroke:#344a37;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.about-section .about-floating-photo img{aspect-ratio:1/1}
+.about-section .about-floating-photo{width:100%;max-width:480px;justify-self:center;align-self:center;margin:18px auto 30px;padding:18px 18px 22px}
+.about-section .about-floating-photo img{width:calc(100% + 32px);margin:0 -16px -12px 16px;aspect-ratio:1/1}
+@media(max-width:620px){.about-section .about-floating-photo{width:min(94%,380px);max-width:380px;margin:12px auto 44px;padding:16px 16px 20px}.about-section .about-floating-photo img{width:calc(100% + 28px);margin:0 -14px -10px 14px}}
