@@ -9,7 +9,10 @@ A responsive, single-page personal CV and portfolio website for presenting Patri
 - **Year and section:** 4th Year — BSIT 4B
 - **School:** Davao del Norte State College
 - **Course:** Application Development and Emerging Technologies
-- **Career interests:** UI/UX design, research, technical documentation, and technology-driven solutions
+- **Location:** Kapalong, Davao del Norte, Philippines
+- **Senior high school:** STEM strand; graduated with Honors
+- **Leadership:** Consistent group leader from elementary through senior high school; current System Analyst Secretary, Institute of Computing Organization (CODEx), 2026–2027
+- **Career interests:** Systems analysis, research, technical writing, UI/UX design, and team collaboration
 
 ## Technologies
 
@@ -55,7 +58,7 @@ Open `index.html` directly in a browser, or use a local static web server such a
 
 - Replace the location placeholder in the About section with a city or region Patricia is comfortable sharing publicly.
 - Add a LinkedIn URL if available, or confirm that there is no LinkedIn profile to include.
-- Add senior high school information if applicable and desired.
+- Add senior high school name and dates if desired.
 - Add verified employment, internship, volunteer, organization, or leadership experience and dates if applicable. The current Experience section uses only the confirmed Ocean View contributor role and Sarming film roles.
 - Confirm which email should be public. The website currently uses `cabelin.patriciamarie@dnsc.edu.ph`; the previous README contained `patwnnu@gmail.com`.
 - Deploy the repository to Vercel, then replace “Not deployed yet” above with the real public deployment URL.
