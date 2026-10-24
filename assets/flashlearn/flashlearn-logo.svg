@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title">
+  <title id="title">Flash Learn app logo</title>
+  <defs>
+    <linearGradient id="blue" x2="1" y2="1"><stop stop-color="#119ff3"/><stop offset="1" stop-color="#087edb"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#064a83" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="720" height="300" rx="40" fill="url(#blue)"/>
+  <g filter="url(#shadow)" transform="translate(104 68)">
+    <path fill="#f9d443" d="M102 0 35 93h45l-21 70 91-112h-49l25-51z"/>
+    <path fill="#32d3cb" d="m55 42-48 65h35l-15 49 66-81H57l18-33z" opacity=".95"/>
+  </g>
+  <text x="275" y="174" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700" letter-spacing="-2">Flash Learn</text>
+</svg>
