@@ -579,7 +579,7 @@ img {
 
 .skill-groups {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;
 }
 
@@ -601,6 +601,10 @@ img {
 
 .skill-card:nth-child(3) {
   border-top-color: var(--olive);
+}
+
+.skill-card:nth-child(4) {
+  border-top-color: var(--copper);
 }
 
 .skill-card:hover {
@@ -927,7 +931,7 @@ img {
 
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -1312,10 +1316,6 @@ img {
   .experience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .skill-card:last-child {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 620px) {
@@ -1458,10 +1458,6 @@ img {
   .skill-groups,
   .experience-grid {
     grid-template-columns: 1fr;
-  }
-
-  .skill-card:last-child {
-    grid-column: auto;
   }
 
   .experience-section .section-heading {
