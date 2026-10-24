@@ -195,3 +195,4 @@ body{font-size:17px;line-height:1.78}
 .education-feature .education-card{display:block}
 .education-card h2.education-heading{display:flex;align-items:center;gap:12px;margin:0 0 9px}
 .education-heading svg{display:block;width:27px;height:27px;flex:0 0 27px;fill:none;stroke:#344a37;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.about-section .about-floating-photo img{aspect-ratio:1/1}
