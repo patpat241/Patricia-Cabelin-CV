@@ -1,64 +1,67 @@
-# Patricia Marie H. Cabelin - Personal CV
+# Patricia Marie H. Cabelin — CV Portfolio
 
-## Student Information
+A responsive, single-page personal CV and portfolio website for presenting Patricia Marie H. Cabelin’s profile, education, skills, projects, academic and creative experience, certificates, and contact details.
 
-- **Complete Name:** Patricia Marie H. Cabelin
-- **Year Level:** 4th Year
-- **Set/Section:** BSIT 4B
-- **Subject:** Application Development and Emerging Technologies
+## Student profile
+
+- **Name:** Patricia Marie H. Cabelin
+- **Program:** Bachelor of Science in Information Technology
+- **Year and section:** 4th Year — BSIT 4B
 - **School:** Davao del Norte State College
+- **Course:** Application Development and Emerging Technologies
+- **Career interests:** UI/UX design, research, technical documentation, and technology-driven solutions
 
-## About This Project
-
-This repository contains my personal Curriculum Vitae (CV) webpage created for the subject **Application Development and Emerging Technologies**.
-
-The webpage presents my profile, career objective, educational background, skills, and contact information.
-
-## Career Objective
-
-To become an IT professional who can contribute to the development of useful and innovative technology solutions while continuously learning and improving my skills.
-
-## Skills
-
-- UI/UX Design
-- Figma
-- Graphic Design
-- Technical Documentation
-- Technical Writing
-- Research & Data Gathering
-- Presentation Design
-- Requirements Gathering
-- Project Documentation
-- Microsoft Office
-- Team Collaboration
-
-## Education
-
-**Davao del Norte State College**
-
-Bachelor of Science in Information Technology  
-4th Year — BSIT 4B
-
-## Technologies Used
+## Technologies
 
 - HTML5
 - CSS3
-- Git
-- GitHub
+- Git and GitHub
 - Visual Studio Code
 
-## Project Files
+The site is implemented as one HTML page with a separate CSS stylesheet. It uses no framework or JavaScript dependency.
 
-| File | Description |
+## Portfolio sections
+
+- Personal profile and career objective
+- Basic profile information and contact links
+- Skills and tools
+- Projects with screenshots, descriptions, technologies, and source or viewing links
+- Academic and creative experience
+- Education
+- Certificates
+
+## Project structure
+
+| Path | Purpose |
 |---|---|
-| `index.html` | Contains the structure and content of the CV webpage |
-| `style.css` | Contains the styling and responsive design |
-| `README.md` | Contains the project and student information |
+| `index.html` | Single-page portfolio content and semantic structure |
+| `portfolio.css` | Theme, responsive layout, typography, and interactions |
+| `profile.jpg` | Hero portrait |
+| `autumn-forest.jpg` | Hero background image |
+| `assets/` | Project covers, screenshots, school images, logo, and certificates |
+| `README.md` | Project and student information |
 
-## Contact
+## Run locally
 
-**Email:** patwnnu@gmail.com
+Open `index.html` directly in a browser, or use a local static web server such as VS Code Live Server. No build step is required.
 
----
+## Links
+
+- **GitHub profile:** [github.com/patpat241](https://github.com/patpat241)
+- **GitHub repository:** [Patricia-Cabelin-CV](https://github.com/patpat241/Patricia-Cabelin-CV)
+- **Live Vercel site:** Not deployed yet
+
+## Details to complete
+
+- Replace the location placeholder in the About section with a city or region Patricia is comfortable sharing publicly.
+- Add a LinkedIn URL if available, or confirm that there is no LinkedIn profile to include.
+- Add senior high school information if applicable and desired.
+- Add verified employment, internship, volunteer, organization, or leadership experience and dates if applicable. The current Experience section uses only the confirmed Ocean View contributor role and Sarming film roles.
+- Confirm which email should be public. The website currently uses `cabelin.patriciamarie@dnsc.edu.ph`; the previous README contained `patwnnu@gmail.com`.
+- Deploy the repository to Vercel, then replace “Not deployed yet” above with the real public deployment URL.
+
+## Deployment
+
+This is a static site and can be deployed on Vercel without a build command. Import the GitHub repository in Vercel and use the repository root as the project root. After deployment, check the generated public URL, page navigation, local images and certificate links, and mobile layout.
 
 © 2026 Patricia Marie H. Cabelin
