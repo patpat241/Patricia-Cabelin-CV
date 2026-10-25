@@ -149,23 +149,34 @@ img {
 /* 3. Header and navigation */
 .site-header {
   position: sticky;
-  top: 0;
+  top: 16px;
   z-index: 5;
   display: flex;
-  height: 82px;
+  width: min(1240px, calc(100% - 48px));
+  height: 68px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -82px;
-  padding: 0 clamp(24px, 7vw, 104px);
-  border-bottom: 1px solid #c7a36b70;
-  background: #1b271f;
+  margin: 16px auto -84px;
+  padding: 0 clamp(20px, 4vw, 56px);
+  border: 1px solid #fff8e8;
+  border-radius: 999px;
+  background: rgba(248, 240, 222, .96);
+  box-shadow: 0 12px 34px #10181038;
+  backdrop-filter: blur(14px);
+  transition: transform .28s ease, opacity .28s ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(calc(-100% - 24px));
+  opacity: 0;
+  pointer-events: none;
 }
 
 .wordmark {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #f4e7d1;
+  color: #1b2a20;
   font-family: var(--font-display);
   font-size: 1.12rem;
   font-weight: 700;
@@ -193,7 +204,7 @@ img {
 .site-header nav a {
   position: relative;
   padding: 8px 0;
-  color: #f0e4cf;
+  color: #344237;
   font-size: .76rem;
   font-weight: 500;
   letter-spacing: .075em;
@@ -215,7 +226,7 @@ img {
 
 .site-header nav a:hover,
 .site-header nav a:focus-visible {
-  color: #f1b768;
+  color: #a9472d;
 }
 
 .site-header nav a:hover::after,
@@ -228,10 +239,10 @@ img {
   align-items: center;
   gap: 9px;
   padding: 10px 17px;
-  border: 1px solid #dc9a32;
-  border-radius: 4px;
-  background: #d5a24a;
-  color: #24291f;
+  border: 1px solid #1b2a20;
+  border-radius: 999px;
+  background: #1b2a20;
+  color: #f8eedb;
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .025em;
@@ -240,13 +251,13 @@ img {
 
 .nav-cta span {
   margin: 0;
-  color: #63351f;
+  color: #e6b85e;
 }
 
 .nav-cta:hover {
   transform: translateY(-1px);
-  border-color: #c77731;
-  background: #d8873f;
+  border-color: #a9472d;
+  background: #a9472d;
   color: #fff8ed;
 }
 
@@ -264,7 +275,7 @@ img {
   gap: 6vw;
   overflow: hidden;
   padding: 158px max(10vw, 30px) 85px;
-  background: linear-gradient(90deg, rgba(16, 26, 19, .9), rgba(22, 31, 21, .72) 55%, rgba(27, 31, 20, .49)), url("autumn-forest.jpg") center 48% / cover no-repeat;
+  background: linear-gradient(90deg, rgba(16, 26, 19, .9), rgba(22, 31, 21, .72) 55%, rgba(27, 31, 20, .49)), url("assets/banner-forest.png") center 48% / cover no-repeat;
 }
 
 .hero::before {
@@ -1440,9 +1451,10 @@ img {
     min-height: 64px;
     grid-template-columns: 1fr auto;
     row-gap: 4px;
-    margin-bottom: -90px;
-    padding: 10px 19px 7px;
-    background: #1b271f;
+    top: 10px;
+    width: calc(100% - 24px);
+    margin: 10px auto -90px;
+    padding: 10px 16px 7px;
   }
 
   .wordmark {
@@ -1666,5 +1678,9 @@ img {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;
+  }
+
+  .site-header {
+    transition: none;
   }
 }

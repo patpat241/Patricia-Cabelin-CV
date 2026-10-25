@@ -386,5 +386,42 @@
             </footer>
         </section>
     </main>
+    <script>
+        const siteHeader = document.querySelector(".site-header");
+        let previousScrollY = window.scrollY;
+        let accumulatedScrollDelta = 0;
+        let scrollUpdatePending = false;
+
+        function updateHeaderVisibility() {
+            const currentScrollY = window.scrollY;
+            const scrollDelta = currentScrollY - previousScrollY;
+            accumulatedScrollDelta += scrollDelta;
+
+            if (currentScrollY < 100) {
+                siteHeader.classList.remove("is-hidden");
+                accumulatedScrollDelta = 0;
+            } else if (accumulatedScrollDelta < -8) {
+                siteHeader.classList.remove("is-hidden");
+                accumulatedScrollDelta = 0;
+            } else if (accumulatedScrollDelta > 12) {
+                siteHeader.classList.add("is-hidden");
+                accumulatedScrollDelta = 0;
+            }
+
+            previousScrollY = currentScrollY;
+            scrollUpdatePending = false;
+        }
+
+        window.addEventListener("scroll", () => {
+            if (!scrollUpdatePending) {
+                window.requestAnimationFrame(updateHeaderVisibility);
+                scrollUpdatePending = true;
+            }
+        }, { passive: true });
+
+        siteHeader.addEventListener("focusin", () => {
+            siteHeader.classList.remove("is-hidden");
+        });
+    </script>
 </body>
 </html>
