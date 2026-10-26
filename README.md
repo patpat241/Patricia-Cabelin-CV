@@ -26,12 +26,11 @@ The site is implemented as one HTML page with a separate CSS stylesheet. It uses
 ## Portfolio sections
 
 - Personal profile and career objective
-- Basic profile information and contact links
+- Selected academic software, web, and creative projects
+- Leadership and service
 - Skills and tools
-- Projects with screenshots, descriptions, technologies, and source or viewing links
-- Academic and creative experience
-- Education
-- Certificates
+- Education and certificates
+- Contact details
 
 ## Project structure
 
@@ -39,8 +38,13 @@ The site is implemented as one HTML page with a separate CSS stylesheet. It uses
 |---|---|
 | `index.html` | Single-page portfolio content and semantic structure |
 | `portfolio.css` | Theme, responsive layout, typography, and interactions |
-| `profile.jpg` | Hero portrait |
-| `autumn-forest.jpg` | Hero background image |
+| `assets/patricia-banner-portrait.png` | Cropped transparent portrait retained for future use; hero slot is currently blank |
+| `assets/patricia-banner-source.png` | Original version of the latest supplied portrait, retained for future use |
+| `assets/patricia-cutout.png` | Previous supplied portrait with its background removed, retained for future use |
+| `assets/patricia-new-portrait.png` | Original version of the previous supplied portrait, retained for future use |
+| `assets/about-formal.png` | Previous formal portrait retained in the asset collection |
+| `assets/about-portrait.jfif` | Previous About portrait retained in the asset collection |
+| `assets/patricia-hero.png` | Supplied forest portrait retained as an asset; it is no longer a page background |
 | `assets/` | Project covers, screenshots, school images, logo, and certificates |
 | `README.md` | Project and student information |
 
@@ -56,10 +60,9 @@ Open `index.html` directly in a browser, or use a local static web server such a
 
 ## Details to complete
 
-- Replace the location placeholder in the About section with a city or region Patricia is comfortable sharing publicly.
 - Add a LinkedIn URL if available, or confirm that there is no LinkedIn profile to include.
 - Add senior high school name and dates if desired.
-- Add verified employment, internship, volunteer, organization, or leadership experience and dates if applicable. The current Experience section uses only the confirmed Ocean View contributor role and Sarming film roles.
+- Add verified employment, internship, volunteer, organization, or leadership experience and dates if applicable. The Experience section currently lists the confirmed CODEx secretary role and school group leadership.
 - Confirm which email should be public. The website currently uses `cabelin.patriciamarie@dnsc.edu.ph`; the previous README contained `patwnnu@gmail.com`.
 - Deploy the repository to Vercel, then replace “Not deployed yet” above with the real public deployment URL.
 
