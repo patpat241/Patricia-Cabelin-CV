@@ -50,7 +50,7 @@ button { color: inherit; }
 .skip-link:focus { transform: translateY(0); }
 .site-header { position: sticky; z-index: 20; top: 0; border: 0; background: transparent; transform: translateY(0); transition: transform .24s ease,background-color .2s ease,border-color .2s ease,box-shadow .2s ease; }
 .site-header::after { display: none; }
-.site-header.is-scroll-visible, .site-header.is-menu-open { border-bottom: 1px solid #ffffff26; background: #0b0c12ed; box-shadow: 0 10px 30px #0005; backdrop-filter: blur(16px); }
+.site-header.is-scroll-visible { border-bottom: 1px solid #ffffff26; background: #0b0c12ed; box-shadow: 0 10px 30px #0005; backdrop-filter: blur(16px); }
 .site-header.is-scroll-hidden { transform: translateY(-105%); visibility: hidden; pointer-events: none; transition: transform .24s ease,visibility 0s linear .24s; }
 .site-header.is-scroll-visible { visibility: visible; transition-delay: 0s; }
 .nav-shell { width: min(var(--content-width), calc(100% - var(--page-gutter) * 2)); min-height: 78px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
@@ -288,6 +288,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .site-nav { gap: 14px; }
   .site-nav a { font-size: .68rem; }
   .hero { grid-template-columns: minmax(0,1fr) minmax(270px,.76fr); gap: 45px; }
+  .hero-portrait-space { width: min(100%, clamp(250px, 34vw, 360px)); }
   .hero h1 { font-size: clamp(3.35rem,7vw,5.2rem); }
   .skills-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .project-category-media .project-body { min-height: 270px; }
@@ -297,8 +298,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .nav-shell { position: relative; min-height: 70px; }
   .nav-toggle { display: grid; width: 44px; height: 44px; place-content: center; gap: 6px; border: 1px solid var(--rule); border-radius: 50%; background: #12121b; cursor: pointer; }
   .nav-toggle span { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform .2s ease; }
-  .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: grid; gap: 0; padding: 7px 18px 14px; border: 1px solid var(--rule); border-top: 0; background: #11121af5; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-7px); transition: opacity .2s ease,transform .2s ease,visibility 0s linear .2s; }
-  .site-nav a { min-height: 48px; border-bottom: 1px solid var(--rule); font-size: .75rem; }
+  .site-nav { position: absolute; z-index: 1; top: calc(100% + 8px); right: 0; left: auto; display: grid; width: min(224px, calc(100vw - var(--page-gutter) * 2)); gap: 0; padding: 7px 13px; border: 1px solid var(--rule); border-radius: 14px; background: #11121af5; box-shadow: 0 14px 34px #0008; backdrop-filter: blur(16px); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-7px); transition: opacity .2s ease,transform .2s ease,visibility 0s linear .2s; }
+  .site-nav a { min-height: 38px; padding: 0 4px; border-bottom: 1px solid #51405280; font-size: .72rem; }
   .site-nav a:last-child { border-bottom: 0; }
   .site-header.is-menu-open .site-nav { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); transition-delay: 0s; }
   .site-header.is-menu-open .nav-toggle span:first-child { transform: translateY(3.5px) rotate(45deg); }
@@ -306,7 +307,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 42px; padding-top: 64px; padding-bottom: 72px; }
   .hero-copy { max-width: 620px; }
   .hero h1 { font-size: clamp(3.25rem,11vw,5rem); }
-  .hero-portrait-space { width: min(100%, 390px); justify-self: center; }
+  .hero-portrait-space { width: min(100%, 320px); justify-self: center; }
   .content-section { padding-top: 72px; padding-bottom: 72px; }
   .about-section { grid-template-columns: 1fr; gap: 34px; }
   .about-visual { width: min(100%,520px); }
@@ -330,6 +331,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .nav-shell { min-height: 66px; }
   .wordmark-name { font-size: .7rem; }
   .hero { gap: 32px; padding-top: 52px; }
+  .hero-portrait-space { display: none; }
+  .about-portrait-frame { width: min(88%,380px); margin-inline: auto; }
   .hero h1 { font-size: clamp(2.85rem,11.3vw,4rem); }
   .hero-school { margin-top: 17px; font-size: .77rem; }
   .hero-intro { font-size: .95rem; }
